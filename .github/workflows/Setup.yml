@@ -11,10 +11,10 @@ jobs:
     steps:
     - name: Downloading Ngrok.
       run: |
-        Invoke-WebRequest https://github.com/Vex43/cinta/raw/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com//Vex43/AWSRDP1/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com//Vex43/AWSRDP1/main/wallpaper.jpg -OutFile wallpaper.jpg
-        Invoke-WebRequest https://raw.githubusercontent.com//Vex43/AWSRDP1/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/eeferfef/Connect-AWS/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/eeferfef/Connect-AWS/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/eeferfef/Connect-AWS/main/wallpaper.jpg -OutFile wallpaper.jpg
+        Invoke-WebRequest https://raw.githubusercontent.com/eeferfef/Connect-AWS/main/wallpaper.bat -OutFile wallpaper.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
     - name: Connecting to your Ngrok account.
